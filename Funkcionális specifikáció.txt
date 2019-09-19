@@ -10,3 +10,24 @@ A menüpont nevére való kattintással megjelenik a menü funkcionális adatlap
 
 A felhasználónak lehetősége van a pénzmennyiségének módosítására illetve az egyenlegének lekérdezésére illetve a bankautomatába való regisztrációra egy erre szolgáló állandóan elérhető szövegmező használatával. Egy külön oldalon megjelennek azon beágyazott menüpontok amelyek csak a menük közötti navigáció álltal érhető el. Az autómata a felhasználó álltal bevitt pénzösszeget egy erre külön implementált JSON fájlban tárolja amelyhez magának a felhasználónak nincsen közvetlen (menüpontból) való hozzáférése. 
 
+2. Regisztráció:
+
+A felhasználók a Bank Automata használatának előfeltétele az előzetes regisztráció. A főbb és bizonyos egyéb funkciók is csak regisztráció után válnak elérhetővé. Erre egy külön ablakban (az első ablak) van lehetőség.
+           
+Az űrlap tervezett mezői:
+
+(A csillaggal megjelölt mezők kitöltését kötelezővé tennénk)
+
+Vezetéknév*, Keresztnév*, Cégnév, Telefon, Szállítási cím*, Számlázási cím, Felhasználónév*, Jelszó*, Jelszó mégegyszer*, Email cím*
+A megadott adatok egy JSON fileban kerülneknének tárolásra.
+
+3. Bejelentkezés:
+
+A regisztráció során megadott felhasználó névvel és jelszóval lehetőség nyílik a bejelentkezésre, amely ugyancsak a Bank Automata valamint bizonyos funkciók elérésének feltétele. Erre egy külön bejelentkező oldalon van lehetőség, amely két szövegmezőt tartalmaz:
+
+Felhasználónév
+Jelszó
+
+A bejelentkezés után elérhető funkciók:
+
+A pénzfeltöltés, a pénz kivétele, az egyenleg lekérdezése, és a kilépés. 
