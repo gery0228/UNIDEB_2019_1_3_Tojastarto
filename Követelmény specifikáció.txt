@@ -1,0 +1,9 @@
+1. Alkalmazással kapcsolatos követelmények
+
+Kereskedelmi szoftverről lévén szó, a legfontosabb elvárás a megbízhatóság, az adatok biztoságos tárolása, illetve a bizalmasság. A felhasználók adatainak és érdekeinek védelme éppoly létfontosságű, mint a felhasználó cég érdekeié. Ennek érdekében a szoftvert fel kell készíteni az ismert támadási formák ellen, a biztonság tovább fokozható a felhasználó oldalán tett megkötésekkel (például könnyű jelszavak tiltása), (alapvető felhasználónevek visszaszorítása) de ez nem mehet a többi aspektus rovására.
+
+Kiemelt fontosságú a szoftver felületének kezelhetősége, áttekinthetősége, ugyanakkor meg kell felelnie a lehető legtöbb kényelmi elvárásnak is. Fontos továbbá, hogy a hozzá nem értő felhasználó is könnyen boldoguljon, és mindez a bankautomata kezelhetőségétől a lehető legkevésbé függjön. Természetesen ez vonatkozik az adminisztrátorok által használt kezelőfelületre, funkciókra is.
+
+Fontos a rendszer jó teljesítménye, jó válaszideje, mely lehetővé teszi a gyors ügyintézést, és használhatóvá teszi az alkalmazást nagyobb pénzmennyiség esetén is.
+
+A szolgáltatás lehető legnagyobb rendelkezésre állása alapkövetelmény - bár ezt nagyban befolyásolja a felhasználó illetve az bankautomata alatt futó szoftver, az azzal létesített kapcsolat és annak karbantartása.
