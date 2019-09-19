@@ -19,4 +19,13 @@ A JSON file-ban való adattárolás nem tartozik bele az alkalmazásba, de szoro
 4. Rendelkezésre állás 
 
 A kész rendszert minden tekintetben mentesíteni kell a hibáktól. Ez kitartó tesztelést és esetleges javítások implementálását jelenti. Ugyanakkor az üzembehelyezett Bank Automata karbantartójától is igényel közreműködést, visszajelzéseket. A rendelkezésre állást nagyban befolyásolja az üzemeltető cég körültekintése is.
+
+5. Felhasználói felület áttekinthetősége
+
+Kulcskérdés lehet egy Bank Automata sikerességében annak kinézete, felülete, melynek megfelelő egyensúlyt kell teremtenie a dizájn és funkcionalitás között, ez persze részben függ a rendszert üzembe helyező cégtől is. Az alapokat nagyon jól kell megtervezni, a rendszer üzemeltetőjének utólagos munkáját is célszerű leegyszerűsíteni. Másik nagyon fontos dolog, amiről gondoskodni kell, hogy a rendszer könnyen használható legyen bárki számára.
+ 
+6. Biztonság, bizalmasság, letagadhatatlanság és az alapvető működési funkciók
+
+A gyakorlatban ezt azt jelenti, hogy az adott információhoz csak az juthasson hozzá, akinek ehhez joga van. Illetve kiemelten fontos a jogtalan hozzáférések kiszűrése, és egyéb visszaélési kísérletek megelőzése. A felhasználó megfelelő azonosítása hiányában ne lehessen illetéktelenül hozzáférni az adatokhoz, illetve az adott felhasználóhoz tartozó számlához.
+Alapvető funkciók alatt értjük a számla megtekintését, egyenleg megtekintését, egyenleg feltöltését és egyenleg felvétele. Illetve a felhasználó menedzsmentet, a regisztrációt, és a bejelentkezést. Minden további funkció a kényelmességet biztosítja.
  
