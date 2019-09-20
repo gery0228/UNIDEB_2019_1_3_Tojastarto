@@ -31,3 +31,9 @@ Jelszó
 A bejelentkezés után elérhető funkciók:
 
 A pénzfeltöltés, a pénz kivétele, az egyenleg lekérdezése, és a kilépés. 
+
+4. Főmenü
+
+A bejelentkezést követően a főmenübe érünk, ahol a felhasználó több opcióval is szembetalálja magát ezek a lehetőségek a pénzfeltöltés, pénzfelvétel és az egyenleg menüpontok. A pénzfeltöltés menüpont képes a felhasználó pénzt feltölteni a számlájára, a gombra kattintva egy újabb ablak jelenik meg, ahol a program arra kéri a felhasználót, hogy írja be a feltölteni kívánt pénzösszeget, illetve mellé a saját jelszavát. Helytelen jelszó esetén a pénzfeltöltés sikertelenül fog végrehajtódni, az ablakot ezután a bezárás (x) gombbal lehet bezárni.
+
+A második menüpont, amivel a felhasználó interakcióba tud lépni az a pénzfelvétel. Működése és felépítése hasonló a pénzfeltöltéshez. A kívánt pénzösszeg és a helyes jelszó megadása után sikeresen megtörténik a pénzfelvétel, azonban ha a felhasználó nagyobb számú összeget ír be mezőbe, mint amennyi a számláján elérhető, akkor hibád dob ki a program és a pénzfelvétel sikertelen lesz, az ablakot az előzőhöz hasonlóan a bezárás (x) gombbal lehet bezárni.
