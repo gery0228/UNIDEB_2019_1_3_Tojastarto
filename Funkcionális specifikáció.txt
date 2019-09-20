@@ -1,4 +1,4 @@
-1.0 Az alkalmazás funkciói:
+﻿1.0 Az alkalmazás funkciói:
 
 1.1 Navigáció a menüpontok között:
 
@@ -23,7 +23,7 @@ A megadott adatok egy JSON fileban kerülneknének tárolásra.
 
 3. Bejelentkezés:
 
-A regisztráció során megadott felhasználó névvel és jelszóval lehetőség nyílik a bejelentkezésre, amely ugyancsak a Bank Automata valamint bizonyos funkciók elérésének feltétele. Erre egy külön bejelentkező oldalon van lehetőség, amely két szövegmezőt tartalmaz:
+A regisztráció során megadott felhasználó névvel és jelszóval lehetőség nyílik a bejelentkezésre, amely ugyancsak a Bank Automata valamint bizonyos funkciók elérésének feltétele. Ha a felhasználónév vagy a jelszó hibás, akkor kiírja, hogy helytelen felhasználónév vagy jelszó. Erre egy külön bejelentkező ablakban van lehetőség, amely két szövegmezőt tartalmaz:
 
 Felhasználónév
 Jelszó
