@@ -1,3 +1,7 @@
+Bevezetés
+
+Munkánk végcélja egy ATM bankautomata rendszer megalkotása. A rendszer célja, hogy biztosítson egy a felhasználó igényinek megfelelő általános regisztrációs és bejelentkezési felületet, illetve képes legyen az általános pénzügyi tranzakciók kezelésére, amelyeket más bank automaták is tudnak.
+
 1. Fizikai környezet:
 
 Ezen dokumentumrész célja, hogy ismertesse az alaklmazásunk futtatáshoz szükséges hardveres és szoftveres követelményeket, valamint betekintést nyújt az általunk legfontosabbnak tartott fejlesztői eszközökbe illetve az általunk használt keretrendszer működésébe. 
@@ -37,3 +41,21 @@ Az alkalmazás futtatásához olyan operációs rendszer érdemes választani, a
 1.2.5 IntelliJ
 
 A programunk fejlesztéséhez az IntelliJ integrált fejlesztői környezetet alkalmaztuk.
+
+2. Architekturális terv
+
+2.1 Architekturális tervezési minta
+
+A program a modell-néző-vezérlő szerkezeti minta alapján van felépítve. Az MVC mellett található egy main fájl is ahol a program main függvénye található, továbbá ez tartalmazza azt a függvényt, amely a bejelentkezés ablakot jeleníti meg. Ebben a függvényben van meghatározva az ablak címsora, felbontása és átméretezhetősége. A vezérlő fájl eseményeket, jellemzően felhasználói műveleteket dolgozza fel és válaszol rájuk, illetve a modellben történő változásokat is kiválthat. Ebben a fájlban található a program irányításáért felelő kódrész. A kontrollerben vannak inicializva a javafx által használt komponensek (pl.: gombok, textfield-ek, stb.), illetve a logger plugin, amely a logolásért, illetve a logfájlok elkészítésért felel. A logfájlt a rendszer egy külön az helyre menti, amihez csak az admin fér hozzá. Továbbá itt található javafx által használt függvények, illetve egyéb kódrészletek, amelyek a program egyes részeinek irányításáért felelnek.
+
+A model az alkalmazás által kezelt információk tartomány-specifikus ábrázolása. Ebben a részben található az a kód, amely összeköti a rendszert az adatok tárolására szolgáló json fájlal.
+
+A nézet rész pedig FXMLfájlok, amelyek az ablakok kinézetét tárolják kód formában. Ezek a fájlok egy külön resorces nevű mappában helyezkednek el. 
+
+2.2 Maven framework használata
+
+Az alkalmazás használja a Maven keretrendszer támogatást, amely lehetővé teszi azt hogy hozzáadjunk a projectünkhöz egy pom fájlt. A POM egy buildelendő projektet ír le és annak függőségeit. A pomba a program működéséhez elengedhetetlen függőségeket és pluginokat adhatjuk meg. Ezek közül a fontosabbak a javafx függőségei, amely az ablakok vizuális megjelenítését teszi lehetővé illetve annak funkcióit biztosítja, a json, amely az adatok tárolásához szükséges, a logback függőség, amely a logolást teszi lehetővé. Pluginok közül a maven compiler plugin, amely a program futtatásához elengedhetetlen, a maven checkstyle plugin, amely a program felépítésének a struktúráját határozza meg.
+
+3. Funkcionalitás a fejlesztők szemszögéből
+
+A program indításkor először a main fájlt futattja. A main fájlban található a bejelentkező ablakot aktiváló függvény. Az ablak felépítését tartalmazó FXML fájl betöltéséért az FXMLLoader felel, amely azt a resorces könyvtárban találja meg. TODO
