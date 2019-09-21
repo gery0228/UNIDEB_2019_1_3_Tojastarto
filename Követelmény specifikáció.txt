@@ -31,3 +31,33 @@ A gyakorlatban ezt azt jelenti, hogy egy adott számlához, azon lévő adatokho
 Alapvető funkciók alatt értjük a számla megtekintését, egyenleg megtekintését, egyenleg feltöltését és egyenleg felvétele. Illetve a felhasználó menedzsmentet, amelyek a regisztráció, és a bejelentkezés. Bármely további funkció a kényelmesség érdekét szolgálja.
 
  
+7. Követelménylista
+
+ID	Név			Kifejtés
+
+K1	Bejelentkező ablak	
+Elindításkor az első ablak, amit a felhasználó meglát. Felhasználónév mező, jelszó mező, Bejelentkezés gomb.
+
+K2	Felhasználónév mező	
+Felhasználónak ide írja be a felhasználónevét. Helytelen adat esetén figyelmeztetést kap a felhasználó.
+
+K3	Jelszó mező	
+Felhasználónak ide írja be a felhasználónevét. Helytelen adat esetén figyelmeztetést kap a felhasználó.
+
+K4	Bejelentkezés gomb	
+Megnyomásakor a rendszer leellenőrzi a felhasz. adatait.
+
+K5 	Főmenü ablak	
+Sikeres bejelentkezés esetén felugró ablak. Egyenleg megtekintése, feltöltése, felvétele menüpontokat tartalmaz. Kilépés gomb.
+
+K6	Egyenleg ablak	
+Egyenleg menüpont aktiválásával férhet hozzá a felhasz. Számlán lévő egyenleg összegének lekérdezése.
+
+K7	E. feltöltés ablak	
+Feladata az egyenleg feltöltés igényének kielégítése. A feltöltéshez először meg kell adni a kívánt pénzösszeget, majd a megfelelő jelszó megadásával az összeg felkerül a számlára. Helytelen jelszó esetén a folyamat nem megy végbe és a program helytelen jelszó hibát ad vissza.
+		
+K8 E. felvétel ablak 
+Feladata az egyenleg felvétel igényének kielégítése. A pénzfelvételhez először meg kell adni a kívánt pénzösszeget, majd a megfelelő jelszó megadásával az összeg lekerül a számláról. Helytelen jelszó esetén a folyamat nem megy végbe és a program helytelen jelszó hibát ad vissza. Helytelen érték esetén pedig helytelen pénzösszeg hibát ad vissza.
+
+K9 Kilépés gomb	
+Főmenüben található. Rákattintva bezárja az alkalmazást.
