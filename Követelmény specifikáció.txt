@@ -22,10 +22,12 @@ A kész rendszert minden tekintetben mentesíteni kell a hibáktól. Ez kitartó
 
 5. Felhasználói felület áttekinthetősége
 
-Kulcskérdés lehet egy Bank Automata sikerességében annak kinézete, felülete, melynek megfelelő egyensúlyt kell teremtenie a dizájn és funkcionalitás között, ez persze részben függ a rendszert üzembe helyező cégtől is. Az alapokat nagyon jól kell megtervezni, a rendszer üzemeltetőjének utólagos munkáját is célszerű leegyszerűsíteni. Másik nagyon fontos dolog, amiről gondoskodni kell, hogy a rendszer könnyen használható legyen bárki számára.
+Nagyon fontos lehet egy Bank Automata sikerességében annak kinézete, felülete, melynek megfelelő egyensúlyt kell teremtenie a dizájn és funkcionalitás között, ez persze részben függ a rendszert üzembe helyező cégtől is. Szükséges, hogy az alapok nagyon jól legyenek megtervezve, ezt annak érdekében, hogy a rendszer üzemeltetőjének utólagos munkája leegyszerűsödjön. Másik nagyon fontos dolog, hogy nem szabad a rendszert a saját képességeinkre tervezni, gondoskodni kell arról, hogy a rendszer könnyen használható legyen bárki számára.
  
 6. Biztonság, bizalmasság, letagadhatatlanság és az alapvető működési funkciók
 
-A gyakorlatban ezt azt jelenti, hogy az adott információhoz csak az juthasson hozzá, akinek ehhez joga van. Illetve kiemelten fontos a jogtalan hozzáférések kiszűrése, és egyéb visszaélési kísérletek megelőzése. A felhasználó megfelelő azonosítása hiányában ne lehessen illetéktelenül hozzáférni az adatokhoz, illetve az adott felhasználóhoz tartozó számlához.
-Alapvető funkciók alatt értjük a számla megtekintését, egyenleg megtekintését, egyenleg feltöltését és egyenleg felvétele. Illetve a felhasználó menedzsmentet, a regisztrációt, és a bejelentkezést. Minden további funkció a kényelmességet biztosítja.
+A gyakorlatban ezt azt jelenti, hogy egy adott számlához, azon lévő adatokhoz és egyenleghez csak az juthasson hozzá, akinek ehhez joga van. Továbbá kiemelten fontos a jogtalan hozzáférések kiszűrése, és egyéb visszaélési kísérletek megelőzése. A felhasználó megfelelő azonosítása hiányában ne lehessen illetéktelenül hozzáférni az adatokhoz, illetve az adott felhasználóhoz tartozó számlához. Még ha be is jelentkeztek a számlába a megfelelő adatok megadásával, autentikáció nélkül ne lehessen a számlán lévő egyenleget mozgatni.
+
+Alapvető funkciók alatt értjük a számla megtekintését, egyenleg megtekintését, egyenleg feltöltését és egyenleg felvétele. Illetve a felhasználó menedzsmentet, amelyek a regisztráció, és a bejelentkezés. Bármely további funkció a kényelmesség érdekét szolgálja.
+
  
