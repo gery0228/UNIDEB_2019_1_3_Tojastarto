@@ -1,0 +1,39 @@
+1. Fizikai környezet:
+
+Ezen dokumentumrész célja, hogy ismertesse az alaklmazásunk futtatáshoz szükséges hardveres és szoftveres követelményeket, valamint betekintést nyújt az általunk legfontosabbnak tartott fejlesztői eszközökbe illetve az általunk használt keretrendszer működésébe. 
+
+1.1 Hardveres követelmények:
+
+Az alkalmazás futtatásához olyan hardverre van szükség, amely képes a lentebb tárgyalt szoftverek futtatására, alkalmas nagy mennyiségű kérés kiszolgálására, valamint kellően nagy tárhelyen rendelkezik az adatok tárolásához. Jelen állapotban a szoftverünk futtatásához elegendőnek látjuk az 266MHz-es órajelű processzorral, 124 MB memóriával illetve 500 MB tárhellyel rendelkező számítógépet/autómatát. További információkért forduljon az alább bemutatandó szoftverek gyártóihoz!
+
+1.2 Szoftveres követelmények
+
+A továbbiakban részletesebben tárgyaljuk az alkalmazásunk futtatásához elengedhetetlen szoftvertveres komponenseket.
+
+
+1.2.1 Java 11
+
+Mivel az alaklmazásunk elsősorban fizikai rendszereken-en keresztül érhető el, ezért elegedhetetlen egy Java virtuális környezet futtatása. Esetünkben a JAVA 11 verziszámú SDK változatát használjuk.
+
+Az új Java 11 egyik talán legérdekesebb újítása, hogy lehetővé teszi a Java kvázi szkriptnyelvként történő használatát is. A platform új fejlesztésének köszönhetően ugyanis a java parancssori eszköz már közvetlenül forrásból, nyilvánvaló fordítási fázis nélkül, közvetlenül tudja is futtatni a Java kódokat. Annyira, hogy a források első soraként megengedi az ún. "shebang" használatát is, aminek révén a *nix rendszerek legelterjedtebb shelljei kvázi közvetlenül is képessé válnak a szóban forgó Java szkriptfájlok futtatására, illetve mostantól shell szkriptfájlok is írhatók lesznek Java-ban.
+
+Az új verzió egy másik érdekes fejlesztése a ZGC nevű kísérleti szemétgyűjtő megjelenése, ami rendkívül gyors (<10 ms-nál kevesebb időt felemésztő) takarítást ígér még nagyméretű heap esetén is, valamint az immár nyílt forrású Flight Recorder nevű adatgyűjtő, ami a Java alkalmazások és a HotSpot VM minimális költséggel történő monitorozását teszi lehetővé hibakeresés és teljesítményoptimalizálás céljára.
+
+A Fejlesztési környezet kiválasztásánál fontosnak tartottuk a szoftverünk biztonságát és gyorsaságát. 
+
+1.2.2 JavaFX 11
+
+Szoftverünk megjelenítésének létrehozásához a JavaFX 11-es verzióját válásztottuk. Mivel Java programozási nyelvet használtunk ezért volt fontos és nélkülözhetetlen a JavaFX használata programunk megjelenítésének megalkotásához. 
+
+1.2.3 JSON
+
+Szoftverünk a regisztráció során megadott információkat illetve a felhasználói fiókakban szereplő pénzösszegekkel kapcsolatos adatokat JSON fájlban tárolja el. Használatát azért tartottuk előnyösnek mivel az emberek számára is olvasható–írható, programozottan pedig könnyen feldolgozható és előállítható adatcsere-formátum illetve nem elhanyagolható az sem,hogy a  banki autómaták többnyire a pénzösszegeket egy szám adattípusban tárolják és ez a JSON alap adattípusaihoz tartozik. Illetve nem elhanyagolható az adatok értelmezésére, egyszerű és gyors mivoltára nyújtott megoldásai sem.
+
+
+1.2.4 Operációs rendszer
+
+Az alkalmazás futtatásához olyan operációs rendszer érdemes választani, amely képes az előzőekben megfogalmazott szoftverek futtatására. A fenti termékek elérhetőek mind Windows mind UNIX, illetve Linux rendszerekre. A szoftver megvalósítása során választásunk a Windows 10 disztribúcióra esett.
+
+1.2.5 IntelliJ
+
+A programunk fejlesztéséhez az IntelliJ integrált fejlesztői környezetet alkalmaztuk.
