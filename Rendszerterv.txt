@@ -58,4 +58,22 @@ Az alkalmazás használja a Maven keretrendszer támogatást, amely lehetővé t
 
 3. Funkcionalitás a fejlesztők szemszögéből
 
-A program indításkor először a main fájlt futattja. A main fájlban található a bejelentkező ablakot aktiváló függvény. Az ablak felépítését tartalmazó FXML fájl betöltéséért az FXMLLoader felel, amely azt a resorces könyvtárban találja meg. TODO
+3.1 Bejelntkező ablak
+
+A program indításkor először a main fájlt futattja. A main fájlban található a bejelentkező ablakot aktiváló függvény. Az ablak felépítését tartalmazó FXML fájl betöltéséért az FXMLLoader felel, amely azt a resorces könyvtárban találja meg. Majd a main-ben lévő launch utasítás indítja el a programot.
+
+3.2 Főmenü ablak
+
+A bejelentkezési adatok megadása és a bejelentkezés gomb megnyomása után a program egy controllerben lévő actioneventet fogja elővenni, amely megnézi, hogy beírt adatok megfelelnek a json fájlban eltároltakkal, ha nem akkor visszadob egy hibaüzenetet, ha egyeznek, akkor betölti a következő fxml fájlt a resources könyvtárból, amely ugye a főmenü. AZ itt található gombok mindegyikéhez van kapcsolva egy újabb actionevent amelyek a gombok megnevezésének megfelelő ablakot fogják behozni.
+
+3.3 Pénzfelvétel, pénzfeltöltés, egyenleg
+
+Vegyük például a Pénzfelvétel ablakot. A megfelelő fxml fájl beolvasása mellett a json fájlból is beolvassa a benne lévő összeg mennyiségét. Ha pénzt vonunk le, akkor a következőkre kell figyelni: van-e megadva levenni kívánt pénzösszeg, a megadott összeg nagyobb-e a számlán lévő összegnél, mivel a számlán lévő összeg nem mehet át negatívba, van-e megadva jelszó, helyes-e a megadott jelszó. Amennyiben a fent említette problémák valamelyike fennáll a program egy annak megfelelő hibaüzenetet dob vissza és nem fogja végrehajtani a pénzfelvételt. Megfelelő adatok esetén végrehajtódik. A pénzfeltöltés is hasonló módon működik, kivéve hogy ott nem kell törődni azzal, hogy mennyi pénzt töltünk fel. Az egyenleg megtekintése szimplán csak lekéri a json file-ból a számlán lévő pénzösszeget.
+
+3.4 Jelszó megváltoztatása
+
+Jelszó megváltoztatása lekéri a jelszót a json file-ból, összehasonlítja beírt jelszóval, és ha egyezik, akkor kicseréli az újonnan beírtra.
+
+3.5 Kilépés
+
+A főmenüben még található egy kilépés gomb, amely a Platform.exit() sorral bezárja az egész programot. 
