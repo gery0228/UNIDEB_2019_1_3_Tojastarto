@@ -33,32 +33,32 @@ Alapvető funkciók alatt értjük a számla megtekintését, egyenleg megtekint
  
 **7. Követelménylista**
 
-| ID |	Név | Kifejtés |
+ ID 	Név  	Kifejtés 
 
-| --- | --- | --- |
 
-| K1 | Bejelentkező ablak | Elindításkor az első ablak, amit a felhasználó meglát. Felhasználónév mező, jelszó mező, Bejelentkezés gomb.|
+**K1  Bejelentkező ablak** 
+Elindításkor az első ablak, amit a felhasználó meglát. Felhasználónév mező, jelszó mező, Bejelentkezés gomb.
 
-K2	Felhasználónév mező	
+**K2	Felhasználónév mező**	
 Felhasználónak ide írja be a felhasználónevét. Helytelen adat esetén figyelmeztetést kap a felhasználó.
 
-K3	Jelszó mező	
+**K3	Jelszó mező**	
 Felhasználónak ide írja be a felhasználónevét. Helytelen adat esetén figyelmeztetést kap a felhasználó.
 
-K4	Bejelentkezés gomb	
+**K4	Bejelentkezés gomb**	
 Megnyomásakor a rendszer leellenőrzi a felhasz. adatait.
 
-K5 	Főmenü ablak	
+**K5 	Főmenü ablak**	
 Sikeres bejelentkezés esetén felugró ablak. Egyenleg megtekintése, feltöltése, felvétele menüpontokat tartalmaz. Kilépés gomb.
 
-K6	Egyenleg ablak	
+**K6	Egyenleg ablak**	
 Egyenleg menüpont aktiválásával férhet hozzá a felhasz. Számlán lévő egyenleg összegének lekérdezése.
 
-K7	E. feltöltés ablak	
+**K7	E. feltöltés ablak**	
 Feladata az egyenleg feltöltés igényének kielégítése. A feltöltéshez először meg kell adni a kívánt pénzösszeget, majd a megfelelő jelszó megadásával az összeg felkerül a számlára. Helytelen jelszó esetén a folyamat nem megy végbe és a program helytelen jelszó hibát ad vissza.
 		
-K8 E. felvétel ablak 
+**K8 E. felvétel ablak**
 Feladata az egyenleg felvétel igényének kielégítése. A pénzfelvételhez először meg kell adni a kívánt pénzösszeget, majd a megfelelő jelszó megadásával az összeg lekerül a számláról. Helytelen jelszó esetén a folyamat nem megy végbe és a program helytelen jelszó hibát ad vissza. Helytelen érték esetén pedig helytelen pénzösszeg hibát ad vissza.
 
-K9 Kilépés gomb	
+**K9 Kilépés gomb**	
 Főmenüben található. Rákattintva bezárja az alkalmazást.
