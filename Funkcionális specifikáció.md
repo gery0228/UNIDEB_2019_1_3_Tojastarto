@@ -49,8 +49,8 @@ vagy jelszó. Erre egy külön bejelentkező ablakban van lehetőség, amely ké
 A bejelentkezés után elérhető funkciók:
 
 - A pénzfeltöltés 
-- -a pénz kivétele 
-- - az egyenleg lekérdezése, és a kilépés. 
+- a pénz kivétele 
+- az egyenleg lekérdezése és a kilépés. 
 
 **4. Főmenü**
 
