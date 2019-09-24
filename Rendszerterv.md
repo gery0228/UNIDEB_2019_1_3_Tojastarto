@@ -106,12 +106,12 @@ Az erőforrásigényünk kb. 7 személy-nap.
 
 **4.3 Projektcsapat:**
 
-Megrendelő: Tajti Tibor | email: valami@gmail.com
-Projekt menedzser: Kiss Tamás | email: ktomi@gmail.com
-Programozásért felelősek: Kiss Tamás, Takács Gergő, Csicsek Máté, Kis Barbara 
-Felhasználói felületért felőlesek: Takács Gergő , Csicsek Máté
-A rendszer működési logikájáért felelős: Takács Gergő
-Projekt tagok: Kiss Tamás, Takács Gergő, Csicsek Máté, Kis Barbara
+- Megrendelő: Tajti Tibor | email: valami@gmail.com
+- Projekt menedzser: Kiss Tamás | email: ktomi@gmail.com
+- Programozásért felelősek: Kiss Tamás,  Takács Gergő, Csicsek Máté, Kis Barbara 
+- Felhasználói felületért felőlesek: Takács Gergő , Csicsek Máté
+- A rendszer működési logikájáért felelős: Takács Gergő
+- Projekt tagok: Kiss Tamás, Takács Gergő, Csicsek Máté, Kis Barbara
 
 **4.4 A munka feltételei**
 
