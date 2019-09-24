@@ -1,4 +1,4 @@
-A Tojástartó KFt. egy egyetemi csoportból kifejlődött kisvállalkozás, mely egy frekventált helyen elhelyezkedő központtal is rendelkezik Debrecen belvárosában. A hosszú távú fejlődés, illetve a versenyképesség megőrzése végett folyamatosan keresi az újabb terjeszkedési lehetőségeket.
+A **Tojástartó KFT**. egy egyetemi csoportból kifejlődött kisvállalkozás, mely egy frekventált helyen elhelyezkedő központtal is rendelkezik Debrecen belvárosában. A hosszú távú fejlődés, illetve a versenyképesség megőrzése végett folyamatosan keresi az újabb terjeszkedési lehetőségeket.
 
 A cég célja, hogy lépést tartson a versenytársakkal és a fejlődő világgal, a vásárlók igényeivel. A vásárlói visszajelzésekből kiindulva egyre többen igénylik, hogy az Interneten is felvegyék velünk a kapcsolatot.
 
@@ -18,7 +18,7 @@ Reméljük, hogy a sok éves tapasztalatunk a programozás és szoftverfejleszt�
 
 Fejlesztésben résztvevők:
 
-Kiss Tamás - IT Projektmenedzser
-Takács Gergő - Java fejlesztő
-Csicsek Máté - JSON Programozás
-Kis Barbara - JavaFX fejlesztő
+- Kiss Tamás:	IT Projektmenedzser
+- Takács Gergő:	Java fejlesztő
+- Csicsek Máté:	JSON Programozás
+- Kis Barbara:	JavaFX fejlesztő
