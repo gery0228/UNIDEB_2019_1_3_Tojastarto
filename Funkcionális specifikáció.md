@@ -43,12 +43,14 @@ bejelentkezésre, amely ugyancsak a Bank Automata valamint bizonyos funkciók el
 feltétele. Ha a felhasználónév vagy a jelszó hibás, akkor kiírja, hogy helytelen felhasználónév 
 vagy jelszó. Erre egy külön bejelentkező ablakban van lehetőség, amely két szövegmezőt tartalmaz:
 
-Felhasználónév
-Jelszó
+- Felhasználónév
+- Jelszó
 
 A bejelentkezés után elérhető funkciók:
 
-A pénzfeltöltés, a pénz kivétele, az egyenleg lekérdezése, és a kilépés. 
+- A pénzfeltöltés 
+- -a pénz kivétele 
+- - az egyenleg lekérdezése, és a kilépés. 
 
 **4. Főmenü**
 
