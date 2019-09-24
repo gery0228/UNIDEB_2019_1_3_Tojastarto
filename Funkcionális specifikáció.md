@@ -1,6 +1,6 @@
-﻿1.0 Az alkalmazás funkciói:
+**1.0 Az alkalmazás funkciói:**
 
-1.1 Navigáció a menüpontok között:
+**1.1 Navigáció a menüpontok között:**
 
 Az alkalmazás bárki által használható funkciója a bankautomata menüpontjai közötti navigáció.
 
@@ -22,13 +22,13 @@ amelyek csak a menük közötti navigáció álltal érhető el. Az autómata a 
 bevitt pénzösszeget egy erre külön implementált JSON fájlban tárolja amelyhez magának a 
 felhasználónak nincsen közvetlen (menüpontból) való hozzáférése. 
 
-2. Regisztráció:
+**2. Regisztráció:**
 
 A felhasználók a Bank Automata használatának előfeltétele az előzetes regisztráció. 
 A főbb és bizonyos egyéb funkciók is csak regisztráció után válnak elérhetővé. 
 Erre egy külön ablakban (az első ablak) van lehetőség.
            
-Az űrlap tervezett mezői:
+**Az űrlap tervezett mezői:**
 
 (A csillaggal megjelölt mezők kitöltését kötelezővé tennénk)
 
@@ -36,7 +36,7 @@ Vezetéknév*, Keresztnév*, Cégnév, Telefon, Szállítási cím*, Számlázá
 Felhasználónév*, Jelszó*, Jelszó mégegyszer*, Email cím*
 A megadott adatok egy JSON fileban kerülneknének tárolásra.
 
-3. Bejelentkezés:
+**3. Bejelentkezés:**
 
 A regisztráció során megadott felhasználó névvel és jelszóval lehetőség nyílik a 
 bejelentkezésre, amely ugyancsak a Bank Automata valamint bizonyos funkciók elérésének 
@@ -50,7 +50,7 @@ A bejelentkezés után elérhető funkciók:
 
 A pénzfeltöltés, a pénz kivétele, az egyenleg lekérdezése, és a kilépés. 
 
-4. Főmenü
+**4. Főmenü**
 
 Amikor a főmenü felépítéséről beszélünk, azt mondhatjuk, hogy érthető és egyszerű. A rendszerhez 
 napi szinten akár több akár 100 felhasználó fog hozzáférni ezért igazán fontosak az imént említett jellemzők. 
