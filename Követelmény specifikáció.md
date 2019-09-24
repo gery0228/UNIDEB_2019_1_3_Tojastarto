@@ -33,7 +33,7 @@ Alapvető funkciók alatt értjük a számla megtekintését, egyenleg megtekint
  
 **7. Követelménylista**
 
- ID 	Név  	Kifejtés 
+ID 	Név	 Kifejtés 
 
 
 **K1  Bejelentkező ablak** 
