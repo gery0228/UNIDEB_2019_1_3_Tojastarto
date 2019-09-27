@@ -8,5 +8,18 @@
     <artifactId>Projectlabor</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <developers>
+        <developer>
+            <name>Kiss Tamás</name>
+        </developer>
+        <developer>
+            <name>Takács Gergő</name>
+        </developer>
+        <developer>
+            <name>Csicsek Máté</name>
+        </developer>
+        <developer>
+            <name>Kis Barbara</name>
+        </developer>
+    </developers>
 </project>
