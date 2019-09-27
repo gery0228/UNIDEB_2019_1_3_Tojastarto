@@ -1,4 +1,4 @@
-package sample;
+package BankATM;
 
 public class Model {
 }
