@@ -76,4 +76,5 @@ ablakhoz. Két egymás alatt elhelyezkedő szövegmező, a céljukat jelző föl
 alattuk lévő OK gomb és a jobb felső sarokban elhelyezkedő bezárás (x) gomb. A felvenni kívánt összeg 
 és a jelszó beírása után az OK gombra kattintva teljesíthető a pénzfelvétel, azonban helytelen összeg 
 beírása esetén, azaz ha a beírt összeg több mint számlán elérhető pénzösszeg, akkor „Helytelen érték” 
-hibaüzenetet kapunk és nem megy végbe a
+hibaüzenetet kapunk és nem megy végbe a pénzfelvétel. Abban az estben, ha a jelszó helytelen, 
+akkor „helytelen jelszó” hibaüzenetet kapunk vissza.
