@@ -37,5 +37,22 @@ public Model(int balance) {
         this.password = password;
     }
 
+
+  /**
+     * Egy Json fájlt hoz létre és ír bele.
+     * @param filename a Json fájl neve.
+     * @throws Exception
+     */
+    public void writeJsonSimpleDemo(String filename) throws Exception {
+        JSONObject sampleObject = new JSONObject(); 
+        sampleObject.put("balance", getBalance());
+        sampleObject.put("username", getUsername());
+        sampleObject.put("password", getPassword());
+        Files.write(Paths.get(filename), sampleObject.toString().getBytes());
+    }
+
+
+
+
     }
 
