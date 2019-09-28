@@ -6,10 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception{                              //stage-et hozza létre amelyen megjelenítésre kerül a scene
+    public void start(Stage primaryStage) throws IOException {                              //stage-et hozza létre amelyen megjelenítésre kerül a scene
         Parent root = FXMLLoader.load(getClass().getResource("/login.fxml"));      //login.fxml fájlt tölti be a resources-ból
         Scene scene = new Scene(root);
         primaryStage.setTitle("Bejelentkezés");             //az ablak címsora
