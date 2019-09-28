@@ -7,9 +7,9 @@ public class Model {
     private String username;
     private String password;
 
-}
 
-   public Model(int balance) {
+
+public Model(int balance) {
         this.balance = balance;
     }
 
@@ -36,3 +36,6 @@ public class Model {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    }
+
