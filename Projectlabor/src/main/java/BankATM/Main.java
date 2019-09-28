@@ -9,11 +9,11 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/login.fxml"));
+    public void start(Stage primaryStage) throws Exception{                              //stage-et hozza létre amelyen megjelenítésre kerül a scene
+        Parent root = FXMLLoader.load(getClass().getResource("/login.fxml"));      //login.fxml fájlt tölti be a resources-ból
         Scene scene = new Scene(root);
-        primaryStage.setTitle("Bejelentkezés");
-        primaryStage.setResizable(false);
+        primaryStage.setTitle("Bejelentkezés");             //az ablak címsora
+        primaryStage.setResizable(false);                   //nem átméretezhető
         primaryStage.setScene(scene);
         primaryStage.show();
     }
