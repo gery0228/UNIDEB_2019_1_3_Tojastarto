@@ -52,7 +52,32 @@ public Model(int balance) {
     }
 
 
+    /**
+     * Json fájl beolvasásához szükséges try, catch blokkok.
+     */
 
 
+public void readJson() {
+
+        JSONParser parser = new JSONParser();
+
+        try {
+            Object obj = parser.parse(new FileReader("balance.json"));
+            JSONObject jsonObject = (JSONObject) obj;
+            long b1 = (long) jsonObject.get("balance");
+            setBalance((int) b1);
+            String b2 = (String) jsonObject.get("username");
+            setUsername(b2);
+            String b3 = (String) jsonObject.get("password");
+            setPassword(b3);
+        }
+        catch (FileNotFoundException e) {e.printStackTrace();}
+        catch (IOException e) {e.printStackTrace();}
+        catch (ParseException e) {e.printStackTrace();}
+        catch (Exception e) {e.printStackTrace();}
     }
+
+
+
+         }
 
