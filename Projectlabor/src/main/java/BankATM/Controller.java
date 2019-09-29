@@ -47,13 +47,25 @@ public class Controller {
     private TextField depositamount;
 
     @FXML
-    private TextField DPass;
+    private PasswordField DPass;
 
     @FXML
     private Label dipositinfo;
 
     @FXML
     private Label DPassInfo;
+
+    @FXML
+    private TextField withdrawamount;
+
+    @FXML
+    private PasswordField WPass;
+
+    @FXML
+    private Label withdrawinfo;
+
+    @FXML
+    private Label WPassInfo;
 
     Model balance = new Model();
 
@@ -178,6 +190,29 @@ public class Controller {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        balance.readJson();                                             //json fájlból beolvassa az adatokat
+
     }
+
+    @FXML
+    public void withdraw(ActionEvent event) throws Exception {
+            balance.readJson();                                             //json fájlból beolvassa az adatokat
+        if (withdrawamount.getText().isEmpty() || Integer.parseInt(withdrawamount.getText()) < 0 || (balance.getBalance() - Integer.parseInt(withdrawamount.getText()) < 0)) {
+            //megnézi, hogy üres-e a mező vagy negatív-e szám van-e a mezőben vagy, hogy a számlán lévő összegnél nagyobb a beírt összeg
+            withdrawinfo.setText("Helytelen érték");
+        } else {
+            if ((WPass.getText()).equals(balance.getPassword())) {
+                int a = balance.getBalance() - Integer.parseInt(withdrawamount.getText());      //a meglévő összegből kivonja a beírt összeget és az a változóba menti
+                balance.setBalance(a);          //a számlán lévő összeget beállítja az a értékére
+                withdrawamount.clear();
+                WPass.clear();
+                withdrawinfo.setText("");
+                WPassInfo.setText("");
+                balance.writeJsonSimpleDemo("balance.json");
+            } else {
+                WPassInfo.setText("Helytelen jelszó");
+
+            }
+        }
+    }
+
 }
