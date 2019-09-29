@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="529.0" style="-fx-background-color: #ff5252;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BankATM.Controller">
+    <children>
+        <Pane layoutX="82.0" layoutY="53.0" prefHeight="315.0" prefWidth="365.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <children>
+                <TextField id="withdrawamount" fx:id="withdrawamount" layoutX="33.0" layoutY="59.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-radius: 20; -fx-border-color: #ff5252; -fx-border-width: 2;">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font></TextField>
+                <Button id="leveszOK" fx:id="leveszOK" layoutX="246.0" layoutY="261.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="105.0" style="-fx-background-radius: 22;" text="OK">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font></Button>
+                <Label layoutX="33.0" layoutY="14.0" prefHeight="45.0" prefWidth="225.0" text="Írja be az összeget" textFill="#ff5252">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label id="withdrawinfo" fx:id="withdrawinfo" layoutX="33.0" layoutY="118.0" prefHeight="40.0" prefWidth="300.0" textFill="RED">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <PasswordField id="WPass" fx:id="WPass" layoutX="43.0" layoutY="209.0" prefHeight="31.0" prefWidth="280.0" promptText="Jelszó" style="-fx-background-radius: 22; -fx-border-color: #ff5252; -fx-border-radius: 20; -fx-border-width: 2;" />
+                <Label layoutX="43.0" layoutY="158.0" prefHeight="45.0" prefWidth="261.0" text="Adja meg a jelszavát" textFill="#ff5252">
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Label>
+                <Label id="WPassInfo" fx:id="WPassInfo" layoutX="43.0" layoutY="255.0" prefHeight="35.0" prefWidth="193.0" textFill="RED">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
