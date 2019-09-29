@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/balance.json" beforeDir="false" afterPath="$PROJECT_DIR$/balance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BankATM/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BankATM/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/levesz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/levesz.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/egyenleg.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/egyenleg.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainmenu.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,15 +64,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/BankATM/ControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/login.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -120,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/BankATM/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="197" column="74" lean-forward="true" selection-start-line="197" selection-start-column="74" selection-end-line="197" selection-end-column="74" />
+            <state relative-caret-position="2822">
+              <caret line="230" column="24" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -132,8 +123,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jelszo.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="197" selection-start-line="7" selection-start-column="197" selection-end-line="7" selection-end-column="197" />
+            <state relative-caret-position="289">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="20" selection-end-column="25" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/egyenleg.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -148,7 +149,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/balance.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -189,10 +190,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/mainmenu.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/jelszo.fxml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/egyenleg.fxml" />
         <option value="$PROJECT_DIR$/balance.json" />
         <option value="$PROJECT_DIR$/src/main/java/BankATM/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/feltolt.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/egyenleg.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/BankATM/Controller.java" />
       </list>
     </option>
@@ -466,7 +467,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23020135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -477,7 +477,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.08640227" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2181303" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -568,14 +568,6 @@
   <component name="editorHistoryManager">
     <entry file="file://D:/ATM3/ATM3/src/main/resources/logback.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/checkstyle.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/egyenleg.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BankATM/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -620,14 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jelszo.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="197" selection-start-line="7" selection-start-column="197" selection-end-line="7" selection-end-column="197" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/feltolt.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-72">
@@ -636,17 +620,33 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BankATM/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="197" column="74" lean-forward="true" selection-start-line="197" selection-start-column="74" selection-end-line="197" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/balance.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jelszo.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/egyenleg.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BankATM/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2822">
+          <caret line="230" column="24" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="24" />
         </state>
       </provider>
     </entry>

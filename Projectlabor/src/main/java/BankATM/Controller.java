@@ -1,5 +1,6 @@
 package BankATM;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -66,6 +67,9 @@ public class Controller {
 
     @FXML
     private Label WPassInfo;
+
+    @FXML
+    private Label egyenlabel;
 
     Model balance = new Model();
 
@@ -140,7 +144,13 @@ public class Controller {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        balance.readJson();                                             //json fájlból beolvassa az adatokat
+
+    }
+
+    @FXML
+    public void egylabel(ActionEvent event) throws IOException {
+        balance.readJson();                                     //json fájlból beolvassa az adatokat
+        egyenlabel.setText(String.valueOf(balance.getBalance()));
     }
 
     @FXML
@@ -157,6 +167,8 @@ public class Controller {
         stage.show();
 
     }
+
+
 
     @FXML
     public void deposit(ActionEvent event) throws Exception {
@@ -213,6 +225,11 @@ public class Controller {
 
             }
         }
+    }
+
+    @FXML
+    public void closeApp(ActionEvent event) {
+        Platform.exit();
     }
 
 }

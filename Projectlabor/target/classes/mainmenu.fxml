@@ -44,7 +44,7 @@
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Button>
-            <Button id="exitBtn" fx:id="exitBtn" layoutX="563.0" layoutY="297.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="108.0" style="-fx-background-radius: 20;" text="KILÉPÉS" textAlignment="CENTER">
+            <Button id="exitBtn" fx:id="exitBtn" layoutX="563.0" layoutY="297.0" mnemonicParsing="false" onAction="#closeApp" prefHeight="50.0" prefWidth="108.0" style="-fx-background-radius: 20;" text="KILÉPÉS" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
