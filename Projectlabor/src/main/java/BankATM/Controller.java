@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import javafx.event.ActionEvent;
@@ -42,6 +43,7 @@ public class Controller {
         loader.load();
         Parent root = loader.getRoot();
         stage.setTitle("ATM Felhasználói oldal");
+        stage.getIcons().add(new Image("/atmicon.png"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -61,6 +63,7 @@ public class Controller {
         loader.load();
         Parent root = loader.getRoot();
         stage.setTitle("Jelszó megváltoztatása");
+        stage.getIcons().add(new Image("/atmicon.png"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -75,6 +78,7 @@ public class Controller {
         loader.load();
         Parent root = loader.getRoot();
         stage.setTitle("ATM Egyenleg");
+        stage.getIcons().add(new Image("/atmicon.png"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -89,6 +93,7 @@ public class Controller {
         loader.load();
         Parent root = loader.getRoot();
         stage.setTitle("ATM Pénzfeltöltés");
+        stage.getIcons().add(new Image("/atmicon.png"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -103,6 +108,7 @@ public class Controller {
         loader.load();
         Parent root = loader.getRoot();
         stage.setTitle("ATM Pénzlevétel");
+        stage.getIcons().add(new Image("/atmicon.png"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

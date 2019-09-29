@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="630.0" style="-fx-background-color: #39b5ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BankATM.Controller">
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="630.0" style="-fx-background-color: #ffa200;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BankATM.Controller">
     <children>
         <Pane layoutX="110.0" layoutY="42.0" prefHeight="415.0" prefWidth="410.0" style="-fx-background-color: white; -fx-background-radius: 15;">
             <children>

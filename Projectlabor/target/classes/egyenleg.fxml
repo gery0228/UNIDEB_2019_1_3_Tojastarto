@@ -19,7 +19,7 @@
                   <Font name="Arial Bold Italic" size="26.0" />
                </font>
             </Label>
-            <Button id="jelen" fx:id="jelen" layoutX="100.0" layoutY="216.0" mnemonicParsing="false" onAction="#egylabel" style="-fx-background-radius: 10; -fx-background-color: #4CAF50;" text="Megjelenít" textAlignment="CENTER">
+            <Button id="jelen" fx:id="jelen" layoutX="100.0" layoutY="216.0" mnemonicParsing="false" style="-fx-background-radius: 10; -fx-background-color: #4CAF50;" text="Megjelenít" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font></Button>

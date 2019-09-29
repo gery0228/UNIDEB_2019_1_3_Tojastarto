@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,7 +15,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {                              //stage-et hozza létre amelyen megjelenítésre kerül a scene
         Parent root = FXMLLoader.load(getClass().getResource("/login.fxml"));      //login.fxml fájlt tölti be a resources-ból
         Scene scene = new Scene(root);
-        primaryStage.setTitle("Bejelentkezés");             //az ablak címsora
+        primaryStage.setTitle("Bejelentkezés");              //az ablak címsora
+        primaryStage.getIcons().add(new Image("/atmicon.png"));
         primaryStage.setResizable(false);                   //nem átméretezhető
         primaryStage.setScene(scene);
         primaryStage.show();
