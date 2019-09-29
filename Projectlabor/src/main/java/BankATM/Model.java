@@ -17,6 +17,8 @@ public class Model {
     private String username;
     private String password;
 
+public Model() {
+}
 
 
 public Model(int balance) {
