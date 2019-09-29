@@ -43,6 +43,18 @@ public class Controller {
     @FXML
     private Label succes;
 
+    @FXML
+    private TextField depositamount;
+
+    @FXML
+    private TextField DPass;
+
+    @FXML
+    private Label dipositinfo;
+
+    @FXML
+    private Label DPassInfo;
+
     Model balance = new Model();
 
     @FXML
@@ -131,7 +143,27 @@ public class Controller {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        balance.readJson();                                             //json fájlból beolvassa az adatokat
+
+    }
+
+    @FXML
+    public void deposit(ActionEvent event) throws Exception {
+        balance.readJson();                                         //json fájlból beolvassa az adatokat
+        if (depositamount.getText().isEmpty() || Integer.parseInt(depositamount.getText()) < 0) { //amező nem lehet üres és negatív sem
+            dipositinfo.setText("Helytelen érték");
+        } else {
+            if ((DPass.getText()).equals(balance.getPassword())) {
+                int a = (balance.getBalance() + Integer.parseInt(depositamount.getText())) ; //meglévő összeghez hozzáadja a beírtat és az a változóba menti
+                balance.setBalance(a);              //a számlán lévő összeget beállítja az a értékére
+                depositamount.clear();
+                DPass.clear();
+                dipositinfo.setText("");
+                DPassInfo.setText("");
+                balance.writeJsonSimpleDemo("balance.json");    //json fájlba beírja az adatokat
+            } else {
+                DPassInfo.setText("Helytelen jelszó");
+            }
+        }
     }
 
     @FXML
