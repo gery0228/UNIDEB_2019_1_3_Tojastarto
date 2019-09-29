@@ -14,7 +14,7 @@
                         <Font name="System Bold" size="16.0" />
                     </font>
                 </Label>
-                <Button id="change" fx:id="change" focusTraversable="false" layoutX="184.0" layoutY="312.0" prefHeight="40.0" prefWidth="161.0" text="Megváltoztatás">
+                <Button id="change" fx:id="change" focusTraversable="false" layoutX="184.0" layoutY="334.0" onAction="#chgomb" prefHeight="40.0" prefWidth="161.0" text="Megváltoztatás">
                     <font>
                         <Font name="System Bold" size="18.0" />
                     </font>
@@ -34,6 +34,10 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
+            <Label id="succes" fx:id="succes" layoutX="40.0" layoutY="276.0" prefHeight="40.0" prefWidth="305.0" textFill="#00f800">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
             </children>
         </Pane>
     </children>

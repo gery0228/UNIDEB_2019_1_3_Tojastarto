@@ -28,6 +28,21 @@ public class Controller {
     @FXML
     private Label loginmsg;
 
+    @FXML
+    private TextField newpass;
+
+    @FXML
+    private TextField oldpass;
+
+    @FXML
+    private Label passmsg;
+
+    @FXML
+    private Label newpassmsg;
+
+    @FXML
+    private Label succes;
+
     Model balance = new Model();
 
     @FXML
@@ -37,6 +52,8 @@ public class Controller {
     balance.writeJsonSimpleDemo("balance.json");
 
     if ((usern.getText()).equals(balance.getUsername()) && (passw.getText()).equals(balance.getPassword())) {
+        //ha a beírt felh/jelszó egyezzik az eltaroltal akkor beenged a rendszer
+
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/mainmenu.fxml"));
@@ -56,62 +73,79 @@ public class Controller {
 }
 
     @FXML
-    public void passch(ActionEvent event) throws IOException {      //főmenüben lévő opció, jelszó megváltoztatása ablakot hozza be
+    public void passch(ActionEvent event) throws IOException {          //főmenüben lévő opció, jelszó megváltoztatása ablakot hozza be
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(""));
+        loader.setLocation(getClass().getResource("/jelszo.fxml"));
         loader.load();
         Parent root = loader.getRoot();
         stage.setTitle("Jelszó megváltoztatása");
-        stage.getIcons().add(new Image("/atmicon.png"));
+        stage.getIcons().add(new Image("/atmicon.png"));            //ikont ad hozzá a címsorba
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        balance.readJson();
+
+    }
+
+    @FXML
+    public void chgomb(ActionEvent event) throws Exception {
+            balance.readJson();                                     //json fájlból beolvassa az adatokat
+        if (oldpass.getText().equals(balance.getPassword()) && !((newpass.getText()).isEmpty()) && ((newpass.getText()) != null))  {
+            //megnézi, hogy egyenlő a két adat, illetve, hogy üres-e a mező
+            balance.setPassword(newpass.getText());
+            balance.writeJsonSimpleDemo("balance.json");
+            passmsg.setText("");
+            newpassmsg.setText("");
+            oldpass.clear();
+            newpass.clear();
+            succes.setText("Jelszó sikeresen megváltozott");
+        } else if ((newpass.getText() == null) || newpass.getText().isEmpty()) {        //megnézi, hogy üres ez új jelszó mező
+            newpassmsg.setText("Ezt a mezőt nem hagyhatja üresen");
+        } else {passmsg.setText("Helytelen jelszó");}
     }
 
     @FXML
     public void egyenlegNez(ActionEvent event) throws IOException {     //főmenüben lévő opció, egyeneleg ablakot hozza be
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(""));
+        loader.setLocation(getClass().getResource("/egyenleg.fxml"));
         loader.load();
         Parent root = loader.getRoot();
         stage.setTitle("ATM Egyenleg");
-        stage.getIcons().add(new Image("/atmicon.png"));
+        stage.getIcons().add(new Image("/atmicon.png"));            //ikont ad hozzá a címsorba
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        balance.readJson();
+        balance.readJson();                                             //json fájlból beolvassa az adatokat
     }
 
     @FXML
     public void feltoltNez(ActionEvent event) throws IOException {      //főmenüben lévő opció, pénzfeltöltés ablakot hozza be
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(""));
+        loader.setLocation(getClass().getResource("/feltolt.fxml"));
         loader.load();
         Parent root = loader.getRoot();
         stage.setTitle("ATM Pénzfeltöltés");
-        stage.getIcons().add(new Image("/atmicon.png"));
+        stage.getIcons().add(new Image("/atmicon.png"));            //ikont ad hozzá a címsorba
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        balance.readJson();
+        balance.readJson();                                             //json fájlból beolvassa az adatokat
     }
 
     @FXML
     public void leveszNez(ActionEvent event) throws IOException {       //főmenüben lévő opció, pénzfelvétel ablakot hozza be
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(""));
+        loader.setLocation(getClass().getResource("/levesz.fxml"));
         loader.load();
         Parent root = loader.getRoot();
-        stage.setTitle("ATM Pénzlevétel");
-        stage.getIcons().add(new Image("/atmicon.png"));
+        stage.setTitle("ATM Pénzfelvétel");
+        stage.getIcons().add(new Image("/atmicon.png"));            //ikont ad hozzá a címsorba
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        balance.readJson();
+        balance.readJson();                                             //json fájlból beolvassa az adatokat
     }
 }
