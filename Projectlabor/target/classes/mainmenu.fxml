@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
-<?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BankATM.Controller">
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="913.0" style="-fx-background-color: #00BCD4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BankATM.Controller">
    <children>
-      <Button layoutX="226.0" layoutY="127.0" mnemonicParsing="false" text="ezegygom" />
+      <Label fx:id="welcome" alignment="CENTER" layoutX="114.0" layoutY="28.0" prefHeight="60.0" prefWidth="685.0" text="Üdvözöljük">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="114.0" layoutY="105.0" prefHeight="361.0" prefWidth="685.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Label fx:id="mssg1" layoutX="40.0" layoutY="220.0" prefHeight="40.0" prefWidth="251.0" textFill="#f50000">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button id="penzfelt" fx:id="penzfelt" focusTraversable="false" layoutX="41.0" layoutY="60.0" mnemonicParsing="false" onAction="#feltoltNez" prefHeight="85.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Pénzfeltöltés" textFill="#1b0303">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button id="penzkiv" fx:id="penzkiv" focusTraversable="false" layoutX="401.0" layoutY="60.0" mnemonicParsing="false" onAction="#leveszNez" prefHeight="85.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Pénzkivétel">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button id="egyenl" fx:id="egyenl" focusTraversable="false" layoutX="41.0" layoutY="198.0" mnemonicParsing="false" onAction="#egyenlegNez" prefHeight="85.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Egyenleg">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button id="exitBtn" fx:id="exitBtn" layoutX="563.0" layoutY="297.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="108.0" style="-fx-background-radius: 20;" text="KILÉPÉS" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="passch" fx:id="passch" focusTraversable="false" layoutX="401.0" layoutY="198.0" mnemonicParsing="false" onAction="#passch" prefHeight="85.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Jelszó megváltoztatása">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
