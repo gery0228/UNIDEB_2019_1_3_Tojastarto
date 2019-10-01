@@ -12,22 +12,22 @@
          <children>
             <Label id="loginmsg" fx:id="loginmsg" layoutX="67.0" layoutY="214.0" prefHeight="40.0" prefWidth="305.0" textFill="#f50000">
                <font>
-                  <Font name="System Bold" size="16.0" />
+                  <Font name="System Bold" size="16.1" />
                </font>
             </Label>
             <Button id="loginb" fx:id="loginb" focusTraversable="false" layoutX="211.0" layoutY="270.0" onAction="#login" prefHeight="40.0" prefWidth="161.0" text="Bejelentkezés">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="System Bold" size="18.1" />
                </font>
             </Button>
             <PasswordField id="passw" fx:id="passw" layoutX="67.0" layoutY="169.0" prefHeight="45.0" prefWidth="305.0" promptText="Jelszó" style="-fx-border-color: #39b5ff; -fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="System Bold" size="18.1" />
                </font>
             </PasswordField>
             <TextField id="usern" fx:id="usern" layoutX="67.0" layoutY="70.0" prefHeight="45.0" prefWidth="305.0" promptText="Felhasználónév" style="-fx-border-color: #39b5ff; -fx-border-width: 2; -fx-border-radius: 20; -fx-background-radius: 20;">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="System Bold" size="18.1" />
                </font>
             </TextField>
          </children>
