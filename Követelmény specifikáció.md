@@ -8,7 +8,17 @@ Fontos a rendszer jó teljesítménye, jó válaszideje, mely lehetővé teszi a
 
 A szolgáltatás lehető legnagyobb rendelkezésre állása alapkövetelmény - bár ezt nagyban befolyásolja a felhasználó illetve az bankautomata alatt futó szoftver, az azzal létesített kapcsolat és annak karbantartása.
 
+**2. A válaszidő minimális függése az adatok mennyiségétől**
 
+A Bank Automata forgalmának növekedésével ezen kérdés jelentősége egyenes arányban növekszik. Fontos tehát, hogy a rendszer rugalmasan kezeljen nagyobb pénzmennyiséget is, ne okozzon gondot több felhasználó kezelése sem. Pénz feltöltése és levétele a pénz nagyságától függetlenül ugyan olyan gyorsan történjen meg, ne kelljen sok időt várni rá.
+
+**3. Minél gyorsabb válaszidő**
+
+A JSON file-ban való adattárolás nem tartozik bele az alkalmazásba, de szoros kapcsolatban áll azzal. Tehát fontos a különböző JSON fileok nagyfokú és rugalmas támogatása, hogy a válaszidő csak a felhasználó és a JSON file kapcsolatának sebességétől függjön. Ugyanakkor a Bank Automata üzemeltetőjére, karbantartójára is nagyobb rész hárul ebben a pontban.
+
+**4. Rendelkezésre állás**
+
+A kész rendszert minden tekintetben mentesíteni kell a hibáktól. Ez kitartó tesztelést és esetleges javítások implementálását jelenti. Ugyanakkor az üzembehelyezett Bank Automata karbantartójától is igényel közreműködést, visszajelzéseket. A rendelkezésre állást nagyban befolyásolja az üzemeltető cég körültekintése is.
 
 **5. Felhasználói felület áttekinthetősége**
 
