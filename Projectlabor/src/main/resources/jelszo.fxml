@@ -11,32 +11,32 @@
             <children>
                 <Label id="passmsg" fx:id="passmsg" layoutX="40.0" layoutY="136.0" prefHeight="40.0" prefWidth="305.0" textFill="#f50000">
                     <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font name="System Bold" size="16.2" />
                     </font>
                 </Label>
                 <Button id="change" fx:id="change" focusTraversable="false" layoutX="184.0" layoutY="334.0" onAction="#chgomb" prefHeight="40.0" prefWidth="161.0" text="Megváltoztatás">
                     <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="System Bold" size="18.2" />
                     </font>
                 </Button>
                 <PasswordField id="newpass" fx:id="newpass" layoutX="40.0" layoutY="185.0" prefHeight="45.0" prefWidth="305.0" promptText="Új jelszó" style="-fx-border-color: #39b5ff; -fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
                     <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="System Bold" size="18.2" />
                     </font>
                 </PasswordField>
             <PasswordField id="oldpass" fx:id="oldpass" layoutX="40.0" layoutY="82.0" prefHeight="45.0" prefWidth="305.0" promptText="Régi jelszó" style="-fx-border-color: #39b5ff; -fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="System Bold" size="18.2" />
                </font>
             </PasswordField>
             <Label id="newpassmsg" fx:id="newpassmsg" layoutX="40.0" layoutY="236.0" prefHeight="40.0" prefWidth="305.0" textFill="#f50000">
                <font>
-                  <Font name="System Bold" size="16.0" />
+                  <Font name="System Bold" size="16.2" />
                </font>
             </Label>
             <Label id="succes" fx:id="succes" layoutX="40.0" layoutY="276.0" prefHeight="40.0" prefWidth="305.0" textFill="#00f800">
                <font>
-                  <Font name="System Bold" size="16.0" />
+                  <Font name="System Bold" size="16.2" />
                </font></Label>
             </children>
         </Pane>
