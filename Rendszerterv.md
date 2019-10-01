@@ -79,5 +79,78 @@ Jelszó megváltoztatása lekéri a jelszót a json file-ból, összehasonlítja
 A főmenüben még található egy kilépés gomb, amely a Platform.exit() sorral bezárja az egész programot. 
 
 
+**4.1 Projektterv**
 
+Verzió 0.1 | Szerzők: Kiss Tamás, Takács Gergő, Csicsek Máté, Kis Barbara | Dátum 2019.09.16 | Státusz: Tervezet | Megjegyzés: Legelső verzió
+Verzió 0.2 | Szerzők: Kiss Tamás, Takács Gergő, Csicsek Máté, Kis Barbara | Dátum 2019.09.18 | Státusz: Előterjesztés | Megjegyzés: A projekt menedzsere jónak találta
+Verzió 0.3 | Szerzők: Kiss Tamás, Takács Gergő, Csicsek Máté, Kis Barbara | Dátum 2019.09.18 | Státusz: Előterjesztés | Megjegyzés: Módosítások, javítások
+Verzió 0.4 | Szerzők: Kiss Tamás, Takács Gergő, Csicsek Máté, Kis Barbara | Dátum 2019.09.18 | Státusz: Elfogadott | Megjegyzés: Módosított változat véglegesítése
+
+**Státusz osztályozás:**
+	
+	Tervezet	Befejezetlen dokumentum
+	Előterjesztés	A projekt menedzser bírálatával
+	Elfogadott	A megrendelő által elfogadva
+
+**A projekt bemutatása:**
+
+Ez a projektterv a BankAutomata projektet mutatja be, mely 2019.09.09-től 2019.12.12-ig tart. Munkánk végcélja egy ATM bankautomata rendszer megalkotása. A rendszer célja, hogy biztosítson egy a felhasználó igényinek megfelelő általános regisztrációs és bejelentkezési felületet, illetve képes legyen az általános pénzügyi tranzakciók kezelésére, amelyeket más bank automaták is tudnak.
+
+**4.2 Rendszerspecifikáció:** 
+
+Mivel a rendelő és a felhasználók igényei legfőképp a biztonság, illetve a gyorsaság, így arra törekszünk a fejlesztőcsapatunkkal, hogy ezek megvalósuljanak. A Bank Automata használata regisztrációhoz lesz kötve, és ezután a felhasználó a saját megadott felhasználónevével és jelszavával tud majd belépni. Ezután képes lesz a felhasználó a saját egyenlegét kezelni. (feltöltés, levétel, lekérdezés).                                                                                         Várhatóan semmilyen késés sem lesz a pénz feltöltésével, levételével, és lekérdezésével sem.
+
+Költség- és erőforrás-szükségletek:
+
+Az erőforrásigényünk kb. 7 személy-nap.
+
+**4.3 Projektcsapat:**
+
+- Megrendelő: Tajti Tibor | email: valami@gmail.com
+- Projekt menedzser: Kiss Tamás | email: ktomi@gmail.com
+- Programozásért felelősek: Kiss Tamás,  Takács Gergő, Csicsek Máté, Kis Barbara 
+- Felhasználói felületért felőlesek: Takács Gergő , Csicsek Máté
+- A rendszer működési logikájáért felelős: Takács Gergő
+- Projekt tagok: Kiss Tamás, Takács Gergő, Csicsek Máté, Kis Barbara
+
+**4.4 A munka feltételei**
+
+**4.4.1 Munkakörnyezet:**
+
+A projekt a következő munkaállomásokat fogja használni a munka során:
+*4 gép (MacBook macOS, 3 windows asztali pc) 
+
+
+**4.4.2 Rizikómenedzsment:**
+
+*Szoftver-hardver problémák: a fejlesztők nem azonos szoftverek használata nehézséget okozhat
+*Git-commit problémák: pl. Rossz feltöltés, véletlen felülírások
+*mentések elvesztése, áramkimaradás: mentések elvesztése vírusok által, vagy áramkimaradás miatt a még nem mentett fileok update-jei elvesztése
+*fejlesztők betegsége
+
+**4.5 Jelentések**
+
+**4.5.1 Munka menedzsment:**
+
+A munkát Kiss Tamás menedzseli. A trello terveket ő kezeli, ő update-eli. Ő szervezi a csoportmegbeszéléseket, ami Discordon zajlik.
+
+**4.5.2 Csoportgyűlések:**
+
+Kiss Tamás szervezi a Trello segítségével. 
+Általában minden héten kb. 2x-3x szokott lenni gyűlés, este 8-9-től körülbelül éjfél-hajnal 1-2-ig.
+A gyűlések általában a Discordon zajlanak mikrofon, és képernyőmegosztás segítségével.
+Itt megbeszéljük az előző hét problémáit, ill. a következő hét feladatait, illetve segítünk egymásnak amiben tudunk. 
+
+**4.5.3 Minőségbiztosítás:**
+
+Az elkészült terveket a csoport tagjai átnézik, hogy megfelel-e a specifikációnak és az egyes diagramtípusok összhangban vannak-e egymással. A meglévő rendszerünk helyes működését a tesztelési dokumentumban leírtak végrehajtása alapján ellenőrizzük és összevetjük a specifikációval, hogy az elvárt eredményt kapjuk-e. További tesztelési lehetőségek: unit tesztek írása az egyes modulokhoz vagy a kód közös átnézése (code review) egy. Szoftverünk minőségét a végső leadás előtt javítani kell az esetleges hibák, ill. bugok miatt.
+
+**4.5.4 Eredmények elfogadása:**
+
+ A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el.
+
+**4.5.5 Státuszjelentés:**
+
+Minden leadásnál a projektmenedzser jelentést tesz a projekt haladásáról, és ha szükséges változásokat indítványoz a projektterven. Ezen kívül a megrendelő felszólítására a menedzser 3 munkanapon belül köteles leadni a jelentést.
+Továbbá gazdálkodnak az erőforrásokkal és szükség esetén a megrendelővel egyeztetnek a projektterv módosításáról.
 
