@@ -4,3 +4,6 @@
 | Jelszó mező tesztelése stringre.                           | Helyes jelszó megadása                    | Bejelentkezés gomb megnyomása | Hibaüzenet, helytelen felhasználónév vagy jelszó | Sikertelen bejelentkezés                               | Átment          | 
 | Felhasználói és jelszó mezők együttes  tesztelése stringre | Helyes felhasználónév és  jelszó megadása | Bejelentkezés gomb megnyomása | Sikeres bejelentkezés, főmenü ablak megjelenése  | Sikeres bejelentkezés                                  | Átment          | 
 | Egyenleg megjelenítése                                     | Egyenleg gomb megnyomása a főmenüben      | Egyenleg gomb megnyomása      | Másodlagos müvelet szükséges a megjelenítéshez   | Felugró ablakban megjelenik a számlán lévő egyenlegünk | Megbukott       |
+ | Pénzfeltöltés gomb tesztelése                              | Pénzfeltöltés gomb megnyomása             | Pénzfeltöltés gomb megnyomása | Pénzfeltöltés ablak megjelenése                  | Pénzfeltöltés ablak megjelenése                        | Átment          | 
+
+| Pénzfeltvétel gomb tesztelése                              | Pénzfelvétel gomb megnyomása              | Pénzfelvétel gomb megnyomása  | Pénzfelvétel ablak megjelenése                   | Pénzfelvétel ablak megjelenése                         | Átment          |
