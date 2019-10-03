@@ -1,11 +1,4 @@
-| Teszt Leírása | Szükséges művelet | Bemenet | Kimenet | Teszt eredménye |
-|---------------|-------------------|---------|---------|-----------------|
-|               |                   |         |         |                 |
-|               |                   |         |         |                 |
-|               |                   |         |         |                 |
-|               |                   |         |         |                 |
-|               |                   |         |         |                 |
-|               |                   |         |         |                 |
-|               |                   |         |         |                 |
-|               |                   |         |         |                 |
-|               |                   |         |         |                 | 
+| Teszt Leírása                                              | Szükséges művelet                         | Bemenet                       | Kimenet                                          | Elvárt kimenet                                         | Teszt eredménye |
+|------------------------------------------------------------|-------------------------------------------|-------------------------------|--------------------------------------------------|--------------------------------------------------------|-----------------|
+| Felhasználói név mező tesztelése stringre.                 | Helyes felhasználónév megadása            | Bejelentkezés gomb megnyomása | Hibaüzenet, helytelen felhasználónév vagy jelszó | Sikertelen bejelentkezés                               | Átment          |
+| Jelszó mező tesztelése stringre.                           | Helyes jelszó megadása                    | Bejelentkezés gomb megnyomása | Hibaüzenet, helytelen felhasználónév vagy jelszó | Sikertelen bejelentkezés                               | Átment          |
